@@ -1,0 +1,26 @@
+{
+  "name": "tripper",
+  "version": "1.0.0",
+  "description": "a destination application allowing world travelers to interact with a database.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treyjewett/Tripper.git"
+  },
+  "author": "Jewett, Williams, Shaw, Broughton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/treyjewett/Tripper/issues"
+  },
+  "homepage": "https://github.com/treyjewett/Tripper#readme"
+}
