@@ -6,7 +6,7 @@ var tripper = require('../models/tripper.js');
 // Create the routes for the app and set up the logic within the routes required.
 router.get('/', function(req, res) {
     tripper.selectAll(function(data) {
-        var hbsObject = { tripper: data };
+        var hbsObject = { trip: data };
         console.log(hbsObject);
         res.render('index', hbsObject);
     });
