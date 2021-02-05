@@ -13,7 +13,7 @@ const connection = mysql.createConnection({
     password: '',
   
     // Name of database
-    database: ''
+    database: 'tripper_db'
   });
 
 module.exports = connection;
