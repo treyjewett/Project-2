@@ -10,4 +10,4 @@ CREATE TABLE trip (
     dest_continent VARCHAR(50) NOT NULL,
     dest-summary TEXT NOT NULL,
     dest_rating INT NOT NULL
-)
+);

@@ -1,5 +1,6 @@
 
 -- Russell
+
 INSERT INTO trip (posted_by, dest_name, dest_summary, dest_rating)
 VALUES('','', '', );
 
@@ -22,3 +23,18 @@ VALUES('Brian', 'Amsterdam', 'Amsterdam lives and breathes art. I visited to att
 -- Michelle 
 INSERT INTO trip (posted_by, dest_name, dest_summary, dest_rating)
 VALUES('Anonymous', 'Mt Evans', 'Colorado has grown in popularity over the years for its beauty. The scenic hiking is what attracted me initially in 2016. My favorite experience in Colorado took within the Rocky Mountains on a drive up the 14,000 ft. peak of Mt.Evans. There are several parks and lodges along the way too. I enjoy how new and jagged these mountains appeared once we reached the top.', 7);
+=======
+INSERT INTO trip (dest_name, dest_continent, dest_summary, dest_rating)
+VALUES('', '', '', '');
+
+-- Will
+INSERT INTO trip (dest_name, dest_continent, dest_summary, dest_rating)
+VALUES('', '', '', '');
+
+-- Josh
+INSERT INTO trip (dest_name, dest_continent, dest_summary, dest_rating)
+VALUES('', '', '', '');
+
+-- Angelee
+INSERT INTO trip (dest_name, dest_continent, dest_summary, dest_rating)
+VALUES('', '', '', '');
