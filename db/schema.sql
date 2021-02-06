@@ -8,6 +8,7 @@ CREATE TABLE trip (
     id INT NOT NULL AUTO_INCREMENT,
     dest_name VARCHAR(50) NOT NULL, 
     dest_continent VARCHAR(50) NOT NULL,
-    dest-summary TEXT NOT NULL,
-    dest_rating INT NOT NULL
-);
+    dest_summary TEXT NOT NULL,
+    dest_rating INT NOT NULL,
+    PRIMARY KEY (id)
+)
