@@ -18,3 +18,5 @@ router.post('/api/trips', function(req, res) {
         res.json({ id: result.insertId });
     });
 });
+
+module.exports = router;
