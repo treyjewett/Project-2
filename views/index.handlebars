@@ -1,0 +1,22 @@
+
+<div className = 'header'>
+  <h1>Tripper</h1>
+  <p>Explore the world</p>
+</div>
+
+<a href="/{{this.id}}">-a button for something-</a>
+
+<!-- Pass in data from tripper_db -->
+<ul>
+  {{#each trip}}
+  	<li>
+  	<p><span class="label">ID:</span> {{this.id}}</p>
+      <p><span class="label">Posted By:</span> {{this.dest_name}}</p>
+      <p><span class="label">Destination:</span> {{this.dest_continent}}</p>
+      <p><span class="label">Description:</span> {{this.dest_summary}}</p>
+      <p><span class="label">Rating:</span> {{this.dest_rating}}</p>
+  	</li>
+  {{/each}}
+</ul>
+
+
