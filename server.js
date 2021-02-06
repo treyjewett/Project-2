@@ -1,5 +1,5 @@
 const express = require('express');
-var exphbs = require("express-handlebars");
+
 const connection = require('./config/connection');
 
 var PORT = process.env.PORT || 3001
@@ -23,11 +23,14 @@ app.use(express.json());
 
 
 //handlebars
-// Serve index.handlebars to the root route.
+var exphbs = require("express-handlebars");
+
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-
+//routes
+var router = require("./controllers/controller.js");
+app.use(router);
 
 //listener
 app.listen(PORT, function() {
