@@ -4,6 +4,8 @@
   <p>Explore the world</p>
 </div>
 
+<a href="/{{this.id}}">-a button for something-</a>
+
 <!-- Pass in data from tripper_db -->
 <ul>
   {{#each trip}}
@@ -13,8 +15,6 @@
       <p><span class="label">Destination:</span> {{this.dest_continent}}</p>
       <p><span class="label">Description:</span> {{this.dest_summary}}</p>
       <p><span class="label">Rating:</span> {{this.dest_rating}}</p>
-
-      <a href="/{{this.id}}">-a button for something-</a>
   	</li>
   {{/each}}
 </ul>
