@@ -32,7 +32,7 @@ Copyright (c) 2021 Russell Jewett, Angelee Shaw, Wilkinson Williams, Josh
 ### Wilkinson Williams
 [image]
 
-### Josh
+### Josh Broughton
 [image]
 
 ---
