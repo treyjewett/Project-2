@@ -12,6 +12,12 @@ router.get('/', function(req, res) {
     });
 });
 
+//get route to connect addtrip page
+router.get('/api/trips', function(req,res) {
+    res.render("addTrip")
+})
+
+
 // Post route to add a new trip to the table.
 router.post('/api/trips', function(req, res) {
     tripper.insertOne(function(result) {
