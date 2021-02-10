@@ -1,7 +1,16 @@
-$('.addTrip').on("click", function(event) {
-    console.log('js file works')
-})
+//const { response } = require("express");
 
+const destName = $('#destination').html();
+const imageContainer = $('#image').html();
+console.log(destName)
+
+
+  $.ajax('/api/pexels/'+destName , {
+    type:"GET",
+    data: destName
+  }).then(function(response) {
+    console.log(response)
+  })
 
 $(".create-trip").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
@@ -15,15 +24,16 @@ $(".create-trip").on("submit", function(event) {
     };
 
     // Send the POST request.
-    $.ajax("/api/cats", {
+    $.ajax("/api/trips", {
       type: "POST",
       data: newTrip
     }).then(
       function() {
-        console.log("created new cat");
+        console.log("created new trip");
         // Reload the page to get the updated list
         location.reload();
       }
     );
   });
 
+  
