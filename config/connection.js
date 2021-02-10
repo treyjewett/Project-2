@@ -11,7 +11,7 @@ const connection = mysql.createConnection(
     user: 'root',
   
     // Your MySQL password
-    password: 'vbsixstar97vbzxAs!',
+    password: '',
   
     // Name of database
     database: 'tripper_db'

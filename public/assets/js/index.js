@@ -1,9 +1,5 @@
-$('.addTrip').on("click", function(event) {
-    console.log('js file works')
-})
-
-
-$(".create-trip").on("submit", function(event) {
+$(function () {
+  $(".trip-form").on("submit", function (event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
@@ -15,15 +11,15 @@ $(".create-trip").on("submit", function(event) {
     };
 
     // Send the POST request.
-    $.ajax("/api/cats", {
+    $.ajax("/api/trips", {
       type: "POST",
       data: newTrip
     }).then(
-      function() {
-        console.log("created new cat");
+      function () {
+        console.log("Added new trip");
         // Reload the page to get the updated list
         location.reload();
       }
     );
   });
-
+});

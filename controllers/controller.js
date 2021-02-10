@@ -13,8 +13,8 @@ router.get('/', function(req, res) {
 });
 
 //get route to connect addtrip page
-router.get('/api/trips', function(req,res) {
-    res.render("addTrip")
+router.get('/addTrip', function(req, res) {
+    res.render("addTrip", {});
 })
 
 
