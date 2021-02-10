@@ -5,13 +5,12 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 ---
 ## Tripper Website
 
-Links 
-[_Visit Tripper_] (https://website.com "Tripper Inc.")
+<a href="https://tripper-db.herokuapp.com/" target="_blank">Visit the Tripper website!</a>
 
 ---
 ## Technologies Used
 
-This platform was built utilizing the following technologies: Node, Express, Handlebars, MySQL, Sequlize ORM, GET and POST Routes, Hroku.
+This platform was built utilizing the following technologies: Node, Express, Handlebars, MySQL, Sequlize ORM, GET and POST Routes, Hroku, JawsDB.
 
 ---
 ## Licenses & Copyrights
@@ -23,16 +22,16 @@ Copyright (c) 2021 Russell Jewett, Angelee Shaw, Wilkinson Williams, Josh
 ---
 ## Contributors
 
-### Russell Jewett
+### <a href="https://github.com/treyjewett" target="_blank">Russell Jewett</a>
 [image]
 
-### Angelee Shaw
+### <a href="https://github.com/angeleefshaw" target="_blank">Angelee Shaw</a>
 [image]
 
-### Wilkinson Williams
+### <a href="https://github.com/Kingcoopa" target="_blank">Wilkinson Williams</a>
 [image]
 
-### Josh Broughton
+### <a href="https://github.com/Jbrough0" target="_blank">Josh Broughton</a>
 [image]
 
 ---
