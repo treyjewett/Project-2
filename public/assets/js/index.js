@@ -1,5 +1,7 @@
+
 $(function () {
   $(".trip-form").on("submit", function (event) {
+
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
@@ -17,9 +19,11 @@ $(function () {
     }).then(
       function () {
         console.log("Added new trip");
+
         // Reload the page to get the updated list
         location.reload();
       }
     );
   });
 });
+

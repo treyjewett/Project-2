@@ -6,6 +6,8 @@ var PORT = process.env.PORT || 3001
 
 var app = express();
 
+// require('dotenv').config();
+
 connection.connect(function(err) {
     if (err) {
       console.error("error connecting: " + err.stack);
@@ -30,9 +32,14 @@ app.set("view engine", "handlebars");
 
 //routes
 var router = require("./controllers/controller.js");
+const { response } = require('express');
 app.use(router);
 
 //listener
 app.listen(PORT, function() {
     console.log("Server listening on: http://localhost:" + PORT);
   });
+
+
+
+  
