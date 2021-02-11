@@ -2,9 +2,9 @@
 INSERT INTO trip (posted_by, dest_name, dest_summary, dest_rating)
 VALUES('Russell', 'Ireland', 'Ireland was a trip I will always cherish. The people are kind, the food is amazing, and the landscape is breathtaking. There was never a dull day and there is always plenty of activities to try, especially if you take an intrest in Irish alcohol products.', 10);
 
--- -- Will
--- INSERT INTO trip (posted_by, dest_name, dest_summary, dest_rating)
--- VALUES('','', '', );
+-- Will
+INSERT INTO trip (posted_by, dest_name, dest_summary, dest_rating)
+VALUES('Will','Colombia', 'I absolutely love Colombia. The beaches are gorgeous. The food is absolutely amazing, and the night life is second to none. The most popular locations in the country are Bogota, Cali, Medellin, Cartegena, and Baranquilla. Plus, its CHEAP to have a good time!!!', 10);
 
 -- -- Josh
 -- INSERT INTO trip (posted_by, dest_name, dest_summary, dest_rating)
@@ -24,10 +24,6 @@ VALUES('Anonymous', 'Mt Evans', 'Colorado has grown in popularity over the years
 
 INSERT INTO trip (posted_by, dest_name, dest_summary, dest_rating)
 VALUES('Anonymous', 'France', 'I had always wanted to visit France to see the iconic beauty of Paris. I must say I was a little disappointed. The city had a nasty odor, the people were rude if you do not speak French, and the city as a whole was just not what I was expecting. The French food was underwhelming, and the crowds were just too much for me.', 5);
-
--- -- Will
--- INSERT INTO trip (dest_name, dest_continent, dest_summary, dest_rating)
--- VALUES('', '', '', );
 
 -- -- Josh
 -- INSERT INTO trip (dest_name, dest_continent, dest_summary, dest_rating)
