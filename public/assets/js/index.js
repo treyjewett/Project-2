@@ -1,4 +1,18 @@
 
+const destName = $('#destination').html();
+const imageContainer = $('#image').html();
+console.log(destName)
+
+
+  $.ajax('/api/pexels/'+destName , {
+    type:"GET",
+    data: destName
+  }).then(function(response) {
+    console.log(response)
+  })
+
+
+
 $(function () {
   $(".trip-form").on("submit", function (event) {
 
