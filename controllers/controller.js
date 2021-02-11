@@ -15,8 +15,8 @@ router.get('/', function(req, res) {
 });
 
 //get route to connect addtrip page
-router.get('/trip', function(req,res) {
-    res.redirect("addTrip")
+router.get('/addTrip', function(req, res) {
+    res.render("addTrip", {});
 })
 
 

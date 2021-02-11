@@ -1,18 +1,7 @@
-//const { response } = require("express");
 
-const destName = $('#destination').html();
-const imageContainer = $('#image').html();
-console.log(destName)
+$(function () {
+  $(".trip-form").on("submit", function (event) {
 
-
-  $.ajax('/api/pexels/'+destName , {
-    type:"GET",
-    data: destName
-  }).then(function(response) {
-    console.log(response)
-  })
-
-$(".create-trip").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
@@ -28,12 +17,13 @@ $(".create-trip").on("submit", function(event) {
       type: "POST",
       data: newTrip
     }).then(
-      function() {
-        console.log("created new trip");
+      function () {
+        console.log("Added new trip");
+
         // Reload the page to get the updated list
         location.reload();
       }
     );
   });
+});
 
-  
