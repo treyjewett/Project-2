@@ -17,9 +17,13 @@ var db = require("../models");
 module.exports = function(app) {
     
 app.get('/', function(req, res) {
-    db.Trip.findAll({}).then(function(dbTrip) {
-        var hbsObject = {trip: data}
-        return res.render('index', hbsObject)
+    db.Trip.findAll({
+      raw:true,
+      attributes: ['author', 'name', 'summary', 'rating']
+    }).then(function(data) {
+      //console.log(data)
+      var hbsObject = {trip: data}
+      return res.render('index', hbsObject)
     })
 
     // tripper.selectAll(function(data) {
