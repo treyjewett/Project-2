@@ -1,10 +1,9 @@
-{
+module.exports = {
   "development": {
     "username": "root",
-    "password": "",
+    "password": null,
     "database": "tripper_db",
-    "host": "localhost",
-    "port": 3306,
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {

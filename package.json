@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "a destination application allowing world travelers to interact with a database.",
   "main": "server.js",
-  "engines":{
+  "engines": {
     "node": "15.4.0",
     "npm": "7.0.15"
   },
