@@ -23,18 +23,12 @@ Copyright (c) 2021 Russell Jewett, Angelee Shaw, Wilkinson Williams, Josh
 ## Contributors
 
 ### <a href="https://github.com/treyjewett" target="_blank">Russell Jewett</a>
-[image]
 
 ### <a href="https://github.com/angeleefshaw" target="_blank">Angelee Shaw</a>
-[image]
 
 ### <a href="https://github.com/Kingcoopa" target="_blank">Wilkinson Williams</a>
-[image]
 
 ### <a href="https://github.com/Jbrough0" target="_blank">Josh Broughton</a>
-[image]
-
----
-## Take-Aways & Leasons Learned
+----
 
 ##### You are tripping if you are not using Tripper!!!
