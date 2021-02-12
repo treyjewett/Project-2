@@ -1,0 +1,20 @@
+{
+  "development": {
+    "username": "root",
+    "password": "vbsixstar97vbzxAs!",
+    "database": "tripper_db",
+    "host": "localhost",
+    "port": 3306,
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "vbsixstar97vbzxAs!",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
+
+
+

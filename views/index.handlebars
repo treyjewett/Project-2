@@ -12,10 +12,10 @@
 <ul>
   {{#each trip}}
   	<li>
-      <h3><span class="label">Destination:</span><span id='destination'>{{this.dest_name}}</span></h3>
-      <p>{{this.posted_by}} <span class="label">Wrote:</span></p>
-      <p><span class="label">Description:</span> {{this.dest_summary}}</p>
-      <p><span class="label">Rating:</span> {{this.dest_rating}}</p>
+      <h3><span class="label">Destination:</span><span id='destination'>{{this.name}}</span></h3>
+      <p>{{this.author}} <span class="label">Wrote:</span></p>
+      <p><span class="label">Description:</span> {{this.summary}}</p>
+      <p><span class="label">Rating:</span> {{this.rating}}</p>
   	</li>
 
       <div id="image">
