@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   up: (queryInterface, DataTypes) => {
-    return queryInterface.createTable('trip', {
+    return queryInterface.createTable('Trip', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -35,6 +35,6 @@ module.exports = {
     });
   },
   down: (queryInterface, DataTypes) => {
-    return queryInterface.dropTable('trip');
+    return queryInterface.dropTable('Trip');
   }
 };

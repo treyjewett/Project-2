@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('trip', [{
+    return queryInterface.bulkInsert('Trip', [{
         author: 'Brian',
         name: 'Amsterdam',
         summary: 'Amsterdam lives and breathes art. I visited to attend Amsterdam Dance Event in 2019. The city itself is dense with a growing population. Transportation varies between biking, running, driving and even sailing. I would reccomend this city to anyone who is craving a new experience at a leisurely pace.',
@@ -13,6 +13,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('trip', null, {});
+    return queryInterface.bulkDelete('Trip', null, {});
   }
 };

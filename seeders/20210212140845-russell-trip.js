@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('trip', [{
+    return queryInterface.bulkInsert('Trip', [{
         author: 'Russel',
         name: 'Ireland',
         summary: 'Ireland was a trip I will always cherish. The people are kind, the food is amazing, and the landscape is breathtaking. There was never a dull day and there is always plenty of activities to try, especially if you take an intrest in Irish alcohol products.',
@@ -13,7 +13,7 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('trip', null, {});
+    return queryInterface.bulkDelete('Trip', null, {});
   }
 };
 
