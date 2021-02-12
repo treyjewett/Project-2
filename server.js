@@ -1,21 +1,26 @@
 const express = require('express');
 
-const connection = require('./config/connection');
-
+var app = express();
 var PORT = process.env.PORT || 3001
 
-var app = express();
+// Requiring our models for syncing
+var db = require("./models");
+
 
 // require('dotenv').config();
 
-connection.connect(function(err) {
-    if (err) {
-      console.error("error connecting: " + err.stack);
-      return;
-    }
-    console.log("connected as id " + connection.threadId);
-  });
-  
+
+//=================================OLD===============================================
+//const connection = require('./config/connection');
+
+// connection.connect(function(err) {
+//     if (err) {
+//       console.error("error connecting: " + err.stack);
+//       return;
+//     }
+//     console.log("connected as id " + connection.threadId);
+//   });
+//==================================================================================
 
 app.use(express.static("public"));
 
@@ -30,16 +35,31 @@ var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+
 //routes
-var router = require("./controllers/controller.js");
-const { response } = require('express');
-app.use(router);
+require("./routes/routes.js")(app);
+
+//=================================OLD===============================================
+// var router = require("./controllers/controller.js");
+// const { response } = require('express');
+// app.use(router);
+//==================================================================================
+
+
+
 
 //listener
-app.listen(PORT, function() {
-    console.log("Server listening on: http://localhost:" + PORT);
+db.sequelize.sync({}).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
   });
+});
+
+//=================================OLD===============================================
+// app.listen(PORT, function() {
+//     console.log("Server listening on: http://localhost:" + PORT);
+//   });
+//==================================================================================
 
 
 
-  

@@ -21,8 +21,8 @@ $(function () {
 
     var newTrip = {
       author: $("#auth").val().trim(),
-      destination: $("#dest").val().trim(),
-      description: $("#description").val().trim(),
+      name: $("#dest").val().trim(),
+      summary: $("#description").val().trim(),
       rating: $("#rating").val().trim(),
     };
 
