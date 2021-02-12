@@ -10,7 +10,7 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 ---
 ## Technologies Used
 
-This platform was built utilizing the following technologies: Node, Express, Handlebars, MySQL, Sequlize ORM, GET and POST Routes, Hroku, JawsDB.
+This platform was built utilizing the following technologies: Node, Express, Handlebars, MySQL, Sequlize ORM, GET and POST Routes, Hroku, JawsDB, Google Firebase.
 
 ---
 ## Licenses & Copyrights

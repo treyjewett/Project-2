@@ -1,13 +1,34 @@
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-		<link rel="stylesheet" href="/assets/css/styles.css" type="t" />
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<title>Tripper</title>
-	</head>
-	<body>
-		{{{ body }}}
-	</body>
-	<script src="/assets/js/index.js" type=""></script>
-</html>
+	<link rel="stylesheet" href="/assets/css/styles.css" type="t" />
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyDxujMpihcgqfeGJ4aGNgmGLIGxey9pXLA",
+			authDomain: "tripper-74d85.firebaseapp.com",
+			projectId: "tripper-74d85",
+			storageBucket: "tripper-74d85.appspot.com",
+			messagingSenderId: "610069813170",
+			appId: "1:610069813170:web:5943c8a88db5aac1ea76ab"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+	</script>
+	<title>Tripper</title>
+</head>
+
+<body>
+	{{{ body }}}
+</body>
+<script src="/assets/js/index.js" type=""></script>
+
+</html>
