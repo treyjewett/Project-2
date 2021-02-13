@@ -1,19 +1,7 @@
-// List dependencies here.
-
-
 var axios = require("axios").default;
 var db = require("../models");
 
-
-//==========================OLD===========================
-// var tripper = require('../models/tripper.js');
-//var router = express.Router();
-//var express = require('express');
-//========================================================
-
-// Create the routes for the app and set up the logic within the routes required.
-
-
+//home page
 module.exports = function(app) {
     
 app.get('/', function(req, res) {
@@ -25,19 +13,12 @@ app.get('/', function(req, res) {
       var hbsObject = {trip: data}
       return res.render('index', hbsObject)
     })
-
-    // tripper.selectAll(function(data) {
-    //     var hbsObject = { trip: data };
-    //     console.log(hbsObject);
-        
 });
 
-
-//get route to connect addtrip page
+//addtrip page
 app.get('/addTrip', function(req, res) {
     res.render("addTrip", {});
 })
-
 
 //new trip
 app.post('/api/trips', function(req, res) {
@@ -49,11 +30,7 @@ app.post('/api/trips', function(req, res) {
     }).then(function(dbTrip) {
         res.json(dbTrip);
     });
-    // tripper.insertOne(function(result) {
-    //     res.json({ id: result.insertId });
-    // });
 });
-
 
 //pexels api
 app.get('/api/pexels/:query', function(req, res) {
@@ -80,10 +57,3 @@ app.get('/api/pexels/:query', function(req, res) {
 
 
 }
-
-
-
-//module.exports = router;
-
-
-
