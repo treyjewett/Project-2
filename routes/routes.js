@@ -22,7 +22,7 @@ app.get('/addTrip', function(req, res) {
 
 //new trip
 app.post('/api/trips', function(req, res) {
-    db.trip.Create({
+    db.Trip.create({
         author: req.body.author,
         name: req.body.name,
         summary: req.body.summary,
