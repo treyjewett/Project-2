@@ -32,6 +32,17 @@ app.post('/api/trips', function(req, res) {
     });
 });
 
+//delete trip
+app.delete("/api/trips/:author", function(req, res) {
+  db.Trip.destroy({
+    where: {
+      author: req.params.author
+    }
+  }).then(function(dbTrip) {
+    res.json(dbTrip);
+  });
+});
+
 //pexels api
 app.get('/api/pexels/:query', function(req, res) {
     const destName = req.params.query
