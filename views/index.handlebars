@@ -17,12 +17,10 @@
       <p><span class="label">Description:</span> {{this.summary}}</p>
       <p><span class="label">Rating:</span> {{this.rating}}</p>
   	</li>
-
+      <button class="delete" data-id="{{this.author}}">Delete: {{this.name}}</button>
+      <div id="image">
       <img id="image" src="">
-
       </img>
-    
-
   {{/each}}
 </ul>
 

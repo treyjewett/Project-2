@@ -14,31 +14,44 @@ $(document).ready(function () {
 
 
   $("#submit").on("click", function addTrip(event) {
+
+    // Make sure to preventDefault on a submit event.
+    event.preventDefault();
     console.log('clicked');
 
-      // Make sure to preventDefault on a submit event.
-      event.preventDefault();
-      console.log('clicked');
+    var newTrip = {
+      author: $("#auth").val().trim(),
+      name: $("#dest").val().trim(),
+      summary: $("#description").val().trim(),
+      rating: $("#rating").val().trim(),
+    };
 
-      var newTrip = {
-        author: $("#auth").val().trim(),
-        name: $("#dest").val().trim(),
-        summary: $("#description").val().trim(),
-        rating: $("#rating").val().trim(),
-      };
+    // Send the POST request.
+    $.ajax("/api/trips", {
+      type: "POST",
+      data: newTrip
+    }).then(
+      function () {
+        console.log("Added new trip");
 
-      // Send the POST request.
-      $.ajax("/api/trips", {
-        type: "POST",
-        data: newTrip
-      }).then(
-        function () {
-          console.log("Added new trip");
-
-          // Reload the page to get the updated list
-          location.reload();
-        }
-      );
-    })
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
   });
+  
+  $(".delete").on("click", function deleteTrip(event) {
+    event.preventDefault();
+    console.log('clicked');
+    var id = $(this).data("id");
+    console.log(id);
+    $.ajax({
+      method: "DELETE",
+      url: "/api/trips/" + id
+    }).then(function () {
+      console.log('deleted trip');
+      location.reload();
+    })
+  })
+});
 
