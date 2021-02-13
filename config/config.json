@@ -1,24 +1,17 @@
 {
   "development": {
-    "username": "root",
-    "password": "",
-    "database": "tripper_db",
-    "host": "localhost",
+    "username": "b0712f18d51295",
+    "password": "0607a776",
+    "database": "heroku_c78a991bf161b18",
+    "host": "us-cdbr-east-03.cleardb.com",
     "port": 3306,
     "dialect": "mysql"
   },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "tripper_db",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
   "production": {
-    "username": "hc0unxsewrw25fur",
-    "password": "dth6khfsqfg8j0pw",
-    "database": "qlg5mtd4indqe6uz",
-    "host": "dt3bgg3gu6nqye5f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "username": "b0712f18d51295",
+    "password": "0607a776",
+    "database": "heroku_c78a991bf161b18",
+    "host": "us-cdbr-east-03.cleardb.com",
     "dialect": "mysql"
   }
 }
