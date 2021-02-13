@@ -1,4 +1,4 @@
-/* importing google fonts *
+/* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 *{
@@ -8,9 +8,25 @@
     font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, verdana;
 }
 
-body{
-    background:;
+body, html{
+    min-height: 100%
 }
+
+body {
+    background-image: url(../Images/Tripper-Logo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    font-size: 45px;
+    align-items: center;
+}
+
+/*.addTrip {
+
+}
+
 
 ul {
     list-style: none;
