@@ -8,6 +8,9 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 <a href="https://tripper-db.herokuapp.com/" target="_blank">Visit the Tripper website!</a>
 
 ---
+## Screen Shots
+
+
 ## Technologies Used
 
 This platform was built utilizing the following technologies: Node, Express, Handlebars, MySQL, Sequlize ORM, GET and POST Routes, Hroku, ClearDB, Google Firebase.
