@@ -9,6 +9,8 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 
 ---
 ## Screen Shots
+<img src="https://github.com/treyjewett/Tripper/blob/main/public/assets/images/TripperScr1.jpeg" width="600" height="600"/> 
+<img src="https://github.com/treyjewett/Tripper/blob/main/public/assets/images/TripperScr2.jpeg" width="600" height="600"/>
 
 
 ## Technologies Used
