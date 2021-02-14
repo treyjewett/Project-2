@@ -13,7 +13,7 @@ body, html{
 }
 
 body {
-    background-image: url(/Tripper\ Logo1.jpg);
+    background-image: url(../images/TripperBG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
