@@ -13,7 +13,7 @@ body, html{
 }
 
 body {
-    background-image: url(../images/TripperBG.jpg);
+    background-image: url(/Tripper\ Logo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -28,6 +28,18 @@ h1 {
     margin-bottom: 5%;
     margin-top: 5%;
     color: #07707c;
+}
+
+h2 {
+    display:block;
+    font-size: 50px;
+    font-family:cursive;
+    font-weight:600;
+    transform: scale(1.4);
+    margin-left: 45%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: #0a0c0c;
 }
 
 ul {
@@ -112,8 +124,55 @@ section{
     transform: translateY(31px);
 }
 
+/*create a trip panel*/
+.create-trip {
+    display:grid;
+    font-weight: 600;
+    flex-wrap: wrap;
+    position: relative;
+    height: 450px;
+    z-index: 2;
+    margin: 35px 35px 35px 35px;
+    padding: 5px 5px;
+    border: 15px;
+    background: rgba(245, 245, 245, 0.671);
+    border-radius: 12px;
+    transform: translateY(31px);
+}
+
+/*form styling*/
+textarea {
+    font-size: 15px;
+    max-width: 440px;
+    max-height: 40px;
+}
+
+#description {
+    max-width: 440px;
+    max-height: 200px;
+}
+
+#rating {
+    max-width: 96px;
+    max-height: 43px;
+}
+
+#submit{
+    width:100;
+    margin: 0px 45%;
+    -webkit-transition: 0.3s ease-in-out;
+    -webkit-transform: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -moz-transform: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    transform: 0.3s ease-in-out;
+}
+
+
+
 /* Footer Styling*/
 footer {
+    background: black;
     color: white;
 }
 
