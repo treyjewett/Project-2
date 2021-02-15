@@ -1,20 +1,31 @@
 $(document).ready(function () {
-  const destName = $('#destination').html();
+  const destName = $('.destination').html();
   console.log(destName)
 
 
+
+  //This grabs all trips from the db to render on page
+  // function getTrips() {
+  //   $.get("/", function(req, res) {
+      
+
+  //   })
+
+  // }
+
+//pexels api
   $.ajax('/api/pexels/' + destName, {
     type: "GET",
   }).then(function (response) {
-    document.getElementById('image').src = response.photos[0].url
-     console.log(response.photos[0].url)
+    $('.image').first().append($(`<img src="${response.photos[0].src.landscape}">`))
+
+    // document.getElementById('image').src = response.photos[0].url
+    //  console.log(response.photos[0].url)
   })
 
 
-
+//add trip route
   $("#submit").on("click", function addTrip(event) {
-
-    // Make sure to preventDefault on a submit event.
     event.preventDefault();
     console.log('clicked');
 
@@ -39,6 +50,8 @@ $(document).ready(function () {
     );
   });
   
+
+  //delete route
   $(".delete").on("click", function deleteTrip(event) {
     event.preventDefault();
     console.log('clicked');
