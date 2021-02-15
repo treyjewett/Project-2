@@ -1,73 +1,71 @@
 /* importing google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, verdana;
+} */
+
+
+
+.header {
+  background-image: url(../images/dubai.jpg);
+  opacity: 80%;
+  height: 800px;
+}
+
+.headtext {
+  padding:120px
 }
 
 body, html{
     min-height: 100%;
 }
 
-body {
-    background-image: url(../images/TripperBG.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 h1 {
-    text-align: center;
-    display:block;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    color: #050536;
     font-size: 100px;
-    font-family:cursive;
-    font-weight:600;
-    transform: scale(1.4);
-    margin-bottom: 5%;
-    margin-top: 5%;
-    color: #07707c;
+    font-weight:100;
+    align-items: center;
 }
 
 h2 {
-    text-align: center;
-    display:block;
-    font-size: 50px;
-    font-family:cursive;
-    font-weight:600;
-    transform: scale(1.4);
-    margin-bottom: 5%;
-    margin-top: 5%;
-    color: #0a0c0c;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    color: #050536;
+    font-size: 30px;
+    font-weight:100;
+    align-items: center;
 }
 
 #nav-btns {
-    width: 25%;
-    justify-self: center;
-    margin-left: 38%;
-    display: block;
-    justify-content: center;
-}
-
-#addTrip {
-    margin-left: 50px;
-}
-
-#sortRating {
-    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 ul {
     list-style: none;
+    width: max-content;
+    align-items: center;
 }
 
 li {
     background:rgba(245, 245, 245, 0.671);
     list-style: none;
-    margin: 15px 0;
-    padding: 5px 0;
     text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    margin-bottom: 20px;
 }
 
 .label {
@@ -78,21 +76,13 @@ li h3 {
     font-size: 30px;
 }
 
-p1 {
-    font-size:45px;
-    font-weight: 600;
-    color:#090a0a;
-    display:flex;
-    margin-left:38%;
-    margin-right:22%;
-}
-
 p {
     font-weight: 500;
 }
 
 /*Add trip/Delete trip Button styling*/
-a button{
+button {
+    padding:5px;
     background-color: #6992b4;
     font-size: 20px;
     color: aliceblue;
@@ -108,12 +98,22 @@ a button{
     transform: 0.3s ease-in-out;
 }
 
+.delete {
+    width:15%;
+    margin:0 auto;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 a button:hover {
     transform: scale(1.25);
 }
 
 /*Delete Button Styling*/
-button {
+/* .delete {
+    padding:5px;
     background-color: rgb(211, 162, 162);
     margin-top: 7px;
     margin-left: 0px;
@@ -123,7 +123,7 @@ button {
     -moz-transform: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     transform: 0.3s ease-in-out;
-}
+} */
 
 button:hover {
     transform: scale(1.07);
@@ -144,7 +144,12 @@ section {
     border: 15px;
     background: rgba(245, 245, 245, 0.671);
     border-radius: 12px;
-    transform: translateY(31px);
+    transform: translateY(31px); 
+} 
+
+.cards {
+    margin-top: 200px;
+    width: 95%;
 }
 
 /*create a trip panel*/
@@ -211,11 +216,23 @@ footer ul li {
     html body .create-trip {
         margin-right: 40%;
     }
+    .nav-btns {
+        flex-direction: column;
+    }
 }
 
 @media all and (min-width: 600px){
    .create-trip {
         margin-left: 20%;
         margin-right: 20%
+    }
+    .nav-btns {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 480px) {
+    .nav-btns {
+        flex-direction: row;
     }
 }

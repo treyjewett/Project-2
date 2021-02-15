@@ -1,14 +1,13 @@
 $(document).ready(function () {
   const destName = $('#destination').html();
-  const imageContainer = $('#image').html();
   console.log(destName)
 
 
   $.ajax('/api/pexels/' + destName, {
     type: "GET",
-    data: destName
   }).then(function (response) {
-    console.log(response)
+    document.getElementById('image').src = response.photos[0].url
+     console.log(response.photos[0].url)
   })
 
 
