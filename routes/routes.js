@@ -33,10 +33,10 @@ app.post('/api/trips', function(req, res) {
 });
 
 //delete trip
-app.delete("/api/trips/:author", function(req, res) {
+app.delete("/api/trips/:summary", function(req, res) {
   db.Trip.destroy({
     where: {
-      author: req.params.author
+      summary: req.params.summary
     }
   }).then(function(dbTrip) {
     res.json(dbTrip);
