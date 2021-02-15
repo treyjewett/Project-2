@@ -1,26 +1,26 @@
-
-<div className = 'header'>
+<div className='header'>
   <h1>Tripper</h1>
-  <p>Explore the world</p>
+  <h2 id="sub-header">Explore the world</p>
 </div>
 
-<a href="/addTrip" class= "addTrip" type="click"><button>Add a Trip</button></a>
+<div id="nav-btns">
+  <a href="/addTrip" class="addTrip" type="click"><button id="addTrip">Add a Trip</button></a>
+  <a href="/{{this.id}}"><button id="sortRating">Sort Trips by Rating</button></a>
+</div>
 
-<a href="/{{this.id}}"><button>Sort Trips by Rating</button></a>
 
 <!-- Pass in data from tripper_db -->
 <ul>
   {{#each trip}}
-  	<li>
-      <h3><span class="label">Destination: </span><span id='destination'>{{this.name}}</span></h3>
-      <p>{{this.author}} <span class="label">Wrote:</span></p>
-      <p><span class="label">Description:</span> {{this.summary}}</p>
-      <p><span class="label">Rating:</span> {{this.rating}}</p>
-  	</li>
-      <button class="delete" data-id="{{this.author}}">Delete: {{this.name}}</button>
-      <div id="image">
-      <img id="image" src="">
-      </img>
+  <li>
+    <h3><span class="label">Destination: </span><span id='destination'>{{this.name}}</span></h3>
+    <p><span class="label">{{this.author}} Wrote:</span></p>
+    <p><span class="label">Description:</span> {{this.summary}}</p>
+    <p><span class="label">Rating:</span> {{this.rating}}</p>
+    <button class="delete" data-id="{{this.author}}">Delete: {{this.name}}</button>
+  </li>
+  <div id="image">
+    <img id="image" src="">
+  </div>
   {{/each}}
 </ul>
-
