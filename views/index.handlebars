@@ -15,14 +15,12 @@
 <ul class='cards'>
   {{#each trip}}
   <li>
-    <h3><span class="label">Destination: </span><span id='destination'>{{this.name}}</span></h3>
-    <p><span class="label">{{this.author}} Wrote:</span></p>
+    <h3><span class="label">Destination:  </span><span class='destination'>{{this.name}}</span></h3>
+    <h4><span class="label">{{this.author}} Wrote:</span></h4>
     <p><span class="label">Description:</span> {{this.summary}}</p>
     <p><span class="label">Rating:</span> {{this.rating}}</p>
-    <img id="image" src="">
     <button class="delete" data-id="{{this.summary}}">Delete: {{this.name}}</button>
-    
   </li>
-
+  <div class="image"></div>
   {{/each}}
 </ul>
