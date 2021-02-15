@@ -9,8 +9,7 @@ module.exports = function(sequelize, DataTypes) {
                 min: 0,
                 max: 10
             }
-        },
-        password: DataTypes.STRING
+        }
     }, {
         freezeTableName: true,
         tableName: 'Trip'
