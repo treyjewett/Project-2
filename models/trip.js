@@ -3,7 +3,14 @@ module.exports = function(sequelize, DataTypes) {
         author: DataTypes.STRING,
         name: DataTypes.STRING,
         summary: DataTypes.TEXT,
-        rating: DataTypes.INTEGER,
+        rating: {
+            type: DataTypes.INTEGER,
+            validate: {
+                min: 0,
+                max: 10
+            }
+        },
+        password: DataTypes.STRING
     }, {
         freezeTableName: true,
         tableName: 'Trip'
