@@ -14,10 +14,8 @@ $(document).ready(function () {
 
 
   $("#submit").on("click", function addTrip(event) {
-
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
-    console.log('clicked');
 
     var newTrip = {
       author: $("#auth").val().trim(),
@@ -35,10 +33,20 @@ $(document).ready(function () {
         console.log("Added new trip");
 
         // Reload the page to get the updated list
-        location.reload();
+        location.replace("/");
       }
     );
   });
+
+  $("#sortRating").on("click", function sortTrip(event) {
+    event.preventDefault();
+    $.ajax({
+      method: "GET",
+      url: "/"
+    }).then(function() {
+      console.log('sorted!');
+    })
+  })
   
   $(".delete").on("click", function deleteTrip(event) {
     event.preventDefault();

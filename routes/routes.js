@@ -32,6 +32,20 @@ app.post('/api/trips', function(req, res) {
     });
 });
 
+//sort trip
+app.get('/api/trips', function(req, res) {
+  db.Trip.findAll({
+    raw: true,
+    attributes: ['author', 'name', 'summary', 'rating'],
+    order: [
+      ['rating', 'DESC']
+    ]
+  }).then(function(data) {
+    var hbsObject = {trip:data}
+    return res.render('index', hbsObject);
+  })
+})
+
 //delete trip
 app.delete("/api/trips/:summary", function(req, res) {
   db.Trip.destroy({
