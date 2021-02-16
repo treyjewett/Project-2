@@ -2,15 +2,32 @@ $(document).ready(function () {
   const destName = $('.destination').html();
   console.log(destName)
 
-//pexels api
-  $.ajax('/api/pexels/' + destName, {
-    type: "GET",
-  }).then(function (response) {
-    $('.image').first().append($(`<img src="${response.photos[0].src.landscape}">`))
+// //pexels api
+//   $.ajax('/api/pexels/' + destName, {
+//     type: "GET",
+//   }).then(function (response) {
+//     $('.image').first().append($(`<img src="${response.photos[0].src.landscape}">`))
 
-    // document.getElementById('image').src = response.photos[0].url
-    //  console.log(response.photos[0].url)
-  })
+//     // document.getElementById('image').src = response.photos[0].url
+//     //  console.log(response.photos[0].url)
+//   })
+
+  $('.destination').each(function(i) {
+    var destCount = $(this).html();
+    console.log(destCount)
+    //pexels api
+    $.ajax('/api/pexels/' + destCount[i], {
+      type: "GET",
+    }).then(function (response) {
+      $('.image').each(function(i) {
+        console.log(response)
+        //const imgContainer = $(this);
+        //console.log(imgContainer)
+        $(this).first().append($(`<img src="${response.photos[1].src.landscape}">`))
+      })
+    })
+  });
+
 
 //add trip route
   $("#submit").on("click", function addTrip(event) {
