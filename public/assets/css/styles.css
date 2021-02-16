@@ -86,8 +86,11 @@ p {
 .image {
     display: flex;
     justify-content: center;
+    text-align: center;
     margin: 0, 10px, 0, 10px;
     height: auto !important;
+    /* max-width: 50%; */
+    max-height: 60%;
 }
 
 /*Add trip/Delete trip Button styling*/

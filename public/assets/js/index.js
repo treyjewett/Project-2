@@ -2,15 +2,18 @@ $(document).ready(function () {
   const tripCard = $('.cards').html();
   // console.log(destName)
 
-  //pexels api
-  // $.ajax('/api/pexels/' + destName, {
-  //   type: "GET",
-  // }).then(function (response) {
-  //   $('.image').first().append($(`<img src="${response.photos[0].src.landscape}">`))
 
-    // document.getElementById('image').src = response.photos[0].url
-    //  console.log(response.photos[0].url)
-  // })
+  $('.destination').each(function(i) {
+    let destCount = $(this).html();
+    console.log(destCount)
+    //pexels api
+    let self = this;
+    $.ajax('/api/pexels/' + destCount, {
+      type: "GET",
+    }).then(function (response) {
+        $(self).parent().parent().parent().children("#"+destCount+"-image").append($(`<img src="${response.photos[0].src.landscape}">`))
+    })
+  }); 
 
   //add trip route
   $("#submit").on("click", function addTrip(event) {
@@ -52,4 +55,3 @@ $(document).ready(function () {
     })
   })
 });
-
