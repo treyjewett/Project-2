@@ -115,7 +115,10 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(31px);
+}
+
+.delete:hover {
+    transform: scake(2.0);
 }
 
 button:hover {
