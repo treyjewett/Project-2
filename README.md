@@ -25,7 +25,7 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 
 This platform was built using the following technologies
 
-> Node.js, Express, Handlebars, MySQL, Sequlize ORM, Heroku, ClearDB, Google Firebase, and Pexels API
+> Node.js, Express, Handlebars, MySQL, Sequlize ORM, Heroku, ClearDB, Passport, and Pexels API
 
 ---
 ## Licenses & Copyrights
