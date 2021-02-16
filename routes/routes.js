@@ -18,9 +18,6 @@ module.exports = function (app) {
 
   //login page
   app.get('/login', function (req, res) {
-    if (req.user) {
-      res.redirect('/addTrip');
-    }
     res.render('login', {});
   });
 
