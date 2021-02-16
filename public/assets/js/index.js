@@ -2,17 +2,6 @@ $(document).ready(function () {
   const destName = $('.destination').html();
   console.log(destName)
 
-
-
-  //This grabs all trips from the db to render on page
-  // function getTrips() {
-  //   $.get("/", function(req, res) {
-      
-
-  //   })
-
-  // }
-
 //pexels api
   $.ajax('/api/pexels/' + destName, {
     type: "GET",
@@ -22,7 +11,6 @@ $(document).ready(function () {
     // document.getElementById('image').src = response.photos[0].url
     //  console.log(response.photos[0].url)
   })
-
 
 //add trip route
   $("#submit").on("click", function addTrip(event) {
@@ -48,17 +36,6 @@ $(document).ready(function () {
       }
     );
   });
-
-  $("#sortRating").on("click", function sortTrip(event) {
-    event.preventDefault();
-    $.ajax({
-      method: "GET",
-      url: "/"
-    }).then(function() {
-      console.log('sorted!');
-    })
-  })
-  
 
   //delete route
   $(".delete").on("click", function deleteTrip(event) {
