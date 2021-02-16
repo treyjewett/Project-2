@@ -19,6 +19,12 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 
 ![tripper-cover](./public/assets/images/cover.png)
 
+Prior to adding a trip, you will be prompted to log in and create an account.
+
+![register](./public/assets/images/signup.png)
+
+![login](./public/assets/images/login.png)
+
 Add a trip to our collaborative travel blog by clicking on the 'Add Trip' button at the top of the page. You will be taken to our Add Trip form (displayed below) where you will be asked to give your name, destination, description, and rating of your trip. 
 
 ![add-trip](./public/assets/images/addtrip.png)
