@@ -17,7 +17,7 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 ---
 ## Demo
 
-![tripper-cover](./public/assets/images/)
+![tripper-cover](./public/assets/images/cover.png)
 
 ---
 
