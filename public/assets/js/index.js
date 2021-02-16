@@ -1,18 +1,18 @@
 $(document).ready(function () {
-  const destName = $('.destination').html();
-  console.log(destName)
+  const tripCard = $('.cards').html();
+  // console.log(destName)
 
-//pexels api
-  $.ajax('/api/pexels/' + destName, {
-    type: "GET",
-  }).then(function (response) {
-    $('.image').first().append($(`<img src="${response.photos[0].src.landscape}">`))
+  //pexels api
+  // $.ajax('/api/pexels/' + destName, {
+  //   type: "GET",
+  // }).then(function (response) {
+  //   $('.image').first().append($(`<img src="${response.photos[0].src.landscape}">`))
 
     // document.getElementById('image').src = response.photos[0].url
     //  console.log(response.photos[0].url)
-  })
+  // })
 
-//add trip route
+  //add trip route
   $("#submit").on("click", function addTrip(event) {
     event.preventDefault();
 
