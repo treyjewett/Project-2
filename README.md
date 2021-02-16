@@ -15,7 +15,7 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 <a href="https://tripper-db.herokuapp.com/" target="_blank">Visit the Tripper website!</a>
 
 ---
-## Screen Shots
+## Demo
 
 ![tripper-cover](./public/assets/images/cover.png)
 
