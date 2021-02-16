@@ -17,7 +17,7 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 ---
 ## Screen Shots
 
-![tripper-cover](./public/assets/images/cover)
+![tripper-cover](./public/assets/images/cover.png)
 
 !
 
