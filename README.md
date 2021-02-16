@@ -19,7 +19,7 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 
 ![tripper-cover](./public/assets/images/cover.png)
 
-!
+---
 
 ## Technologies Used
 
