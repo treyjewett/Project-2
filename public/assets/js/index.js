@@ -5,7 +5,6 @@ $(document).ready(function () {
 
   $('.destination').each(function(i) {
     let destCount = $(this).html();
-    console.log(destCount)
     //pexels api
     let self = this;
     $.ajax('/api/pexels/' + destCount, {

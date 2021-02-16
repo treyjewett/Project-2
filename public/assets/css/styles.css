@@ -129,6 +129,7 @@ button:hover {
 }
 
 #trip-header {
+    padding-top: 30px;
     margin-left: auto;
     text-align: center;
 }
@@ -151,8 +152,45 @@ section {
     width: 95%;
 }
 
+#loginHeader {
+    text-align: center;
+    padding-top: 40px;
+}
+
+#loginHeader h2 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.loginForm {
+    height: 25%;
+}
+
+.label {
+    height: 10%;
+    margin-bottom: 15px;
+}
+
+.login {
+    padding-top: 45px;
+    text-align: center;
+    height: 40%;
+}
+
+#registrationHeader {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.signup {
+    padding-top: 45px;
+    text-align: center;
+    height: 40%;
+}
+
 /*create a trip panel*/
 .create-trip {
+    text-align: center;
     display:grid;
     font-weight: 600;
     flex-wrap: wrap;
@@ -186,13 +224,13 @@ textarea {
 
 #submit{
     width:100;
-    margin: 0px 45%;
-    -webkit-transition: 0.3s ease-in-out;
-    -webkit-transform: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -moz-transform: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    transform: 0.3s ease-in-out;
+    margin: 0px 48.5%;
+    -webkit-transition: 0.2s ease-in-out;
+    -webkit-transform: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -moz-transform: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    transform: 0.2s ease-in-out;
 }
 
 /* Footer Styling*/

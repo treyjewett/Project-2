@@ -31,7 +31,8 @@ $(document).ready(function () {
                 window.location.replace("/addTrip");
                 // If there's an error, log the error
             })
-            .catch(function (err) {
+            .fail(function (err) {
+                alert("Invalid Username/Passsword!");
                 console.log(err);
             });
     }
