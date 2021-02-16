@@ -8,6 +8,7 @@ A collaborative travel blog where users can contribute their adventures to a sha
 ## Description
 
 As avid travelers, we at the Tripper team, wanted to come up with a solution to centralize the process of destination narrowing when planning a trip. Users leave reviews of activities and stays. This is an integrated platform for the professional traveler. It is an all-in-one travel sharing venue. Tripper allows you to have the inside scoop on places you plan on visiting and/or leave bread crumbs for other travelers to follow or avoid.
+
 ---
 ## Tripper Website
 
