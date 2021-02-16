@@ -1,6 +1,7 @@
 $(document).ready(function () {
-  const destName = $('.destination').html();
-  console.log(destName)
+  const tripCard = $('.cards').html();
+  // console.log(destName)
+
 
   $('.destination').each(function(i) {
     let destCount = $(this).html();
@@ -13,9 +14,8 @@ $(document).ready(function () {
         $(self).parent().parent().parent().children("#"+destCount+"-image").append($(`<img src="${response.photos[0].src.landscape}">`))
     })
   }); 
-  
 
-//add trip route
+  //add trip route
   $("#submit").on("click", function addTrip(event) {
     event.preventDefault();
 

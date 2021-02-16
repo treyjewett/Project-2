@@ -1,4 +1,6 @@
 const express = require('express');
+var session = require("express-session");
+var passport = require("./config/passport");
 
 var app = express();
 
@@ -10,6 +12,9 @@ var db = require("./models");
 // require('dotenv').config();
 
 app.use(express.static("public"));
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 
 //parser
 app.use(express.urlencoded({ extended: true }));

@@ -1,22 +1,49 @@
 var axios = require("axios").default;
 var db = require("../models");
+var passport = require("../config/passport");
 
 
-//home page
 module.exports = function (app) {
+  //home page
   app.get('/', function (req, res) {
-    var sorted = req.params.sorted;
-    if (!sorted) {
-      db.Trip.findAll({
-        raw: true,
-        attributes: ['author', 'name', 'summary', 'rating']
-      }).then(function (data) {
-        //console.log(data)
-        var hbsObject = { trip: data }
-        return res.render('index', hbsObject)
-      });
-    }
+    db.Trip.findAll({
+      raw: true,
+      attributes: ['author', 'name', 'summary', 'rating']
+    }).then(function (data) {
+      //console.log(data)
+      var hbsObject = { trip: data }
+      return res.render('index', hbsObject)
+    });
   });
+
+  //login page
+  app.get('/login', function (req, res) {
+    if (req.user) {
+      res.redirect('/addTrip');
+    }
+    res.render('login', {});
+  });
+
+  //login instance
+  app.post('/api/login', passport.authenticate("local"), function(req, res) {
+      res.json(req.user);
+    });
+
+  //signup page
+  app.get('/signup', function(req, res) {
+    res.render('signup', {});
+  }) 
+
+  //add new user
+  app.post('/api/signup', function(req, res) {
+    db.User.create({
+      // console.log(req.body.username, req.body.password),
+      username: req.body.username,
+      password: req.body.password
+    }).then(function(dbUser) {
+      res.json(dbUser);
+    })
+  })
 
   //addtrip page
   app.get('/addTrip', function (req, res) {
@@ -34,7 +61,7 @@ module.exports = function (app) {
       res.json(dbTrip);
     });
   });
-  
+
   //delete trip
   app.delete("/api/trips/:summary", function (req, res) {
     db.Trip.destroy({
