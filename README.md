@@ -7,8 +7,7 @@ A collaborative travel blog where users can contribute their adventures to a sha
 
 ## Description
 
-As avid travelers, we at the Tripper team, wanted to come up with a solution to centralize the process of destination narrowing when planning a trip. Users leave reviews of activities and stays. This is an integrated platform for the professional traveler. It is an all-in-one travel sharing venue. Tripper allows you to have the inside scoop on places you plan on visiting and/or leave bread crumbs for other travelers to follow or avoid. It also gives you an option to sort your trips according to ratings.
-
+As avid travelers, we at the Tripper team, wanted to come up with a solution to centralize the process of destination narrowing when planning a trip. Users leave reviews of activities and stays. This is an integrated platform for the professional traveler. It is an all-in-one travel sharing venue. Tripper allows you to have the inside scoop on places you plan on visiting and/or leave bread crumbs for other travelers to follow or avoid.
 ---
 ## Tripper Website
 
@@ -18,6 +17,11 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 ## Demo
 
 ![tripper-cover](./public/assets/images/cover.png)
+
+Add a trip to our collaborative travel blog by clicking on the 'Add Trip' button at the top of the page. You will be taken to our Add Trip form (displayed below) where you will be asked to give your name, destination, description, and rating of your trip. 
+
+![add-trip](./public/assets/images/addtrip.png)
+
 
 ---
 
@@ -48,4 +52,4 @@ Copyright (c) 2021 Russell Jewett, Angelee Shaw, Wilkinson Williams, Josh Brough
 ### <a href="https://github.com/Jbrough0" target="_blank">Josh Broughton</a>
 ----
 
-##### You are tripping if you are not using Tripper!!!
+##### You are tripping if you are not using Tripper!
