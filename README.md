@@ -1,6 +1,13 @@
-# Project Tripper
+# Tripper
 
-As avid travelers, we at the Tripper team, wanted to come up with a solution to centralize the organizational process of building an itenerary for a trip; leave reviews of activities and stays; post photos; and get feedback from other travelers. This is an integrated platform for the professional traveler. It is an all-in-one travel sharing venue. Tripper allows you to get travel ideas from other traveler's exploits; have the inside scoop on places you plan on visiting; and also leave some bread crumbs for other travelers to follow or avoid. It also gives you an option to sort your trips according to ratings.
+A collaborative travel blog where users can contribute their adventures to a shared platform.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+## Description
+
+As avid travelers, we at the Tripper team, wanted to come up with a solution to centralize the process of destination narrowing when planning a trip. Users leave reviews of activities and stays. This is an integrated platform for the professional traveler. It is an all-in-one travel sharing venue. Tripper allows you to have the inside scoop on places you plan on visiting and/or leave bread crumbs for other travelers to follow or avoid. It also gives you an option to sort your trips according to ratings.
 
 ---
 ## Tripper Website
@@ -9,18 +16,23 @@ As avid travelers, we at the Tripper team, wanted to come up with a solution to 
 
 ---
 ## Screen Shots
-<img src="https://github.com/treyjewett/Tripper/blob/main/public/assets/images/TripperScr1.jpeg" width="600" height="600"/> 
-<img src="https://github.com/treyjewett/Tripper/blob/main/public/assets/images/TripperScr2.jpeg" width="600" height="600"/>
 
+![tripper-cover](./public/assets/images/cover)
+
+!
 
 ## Technologies Used
 
-This platform was built utilizing the following technologies: Node, Express, Handlebars, MySQL, Sequlize ORM, GET and POST Routes, Hroku, ClearDB, Google Firebase.
+This platform was built using the following technologies
+
+> Node.js, Express, Handlebars, MySQL, Sequlize ORM, Heroku, ClearDB, Google Firebase, and Pexels API
 
 ---
 ## Licenses & Copyrights
 
 MIT License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Copyright (c) 2021 Russell Jewett, Angelee Shaw, Wilkinson Williams, Josh Broughton
 
