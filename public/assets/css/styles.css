@@ -1,4 +1,3 @@
-
 .header {
   background-image: url(../images/dubai.jpg);
   opacity: 80%;
@@ -117,10 +116,6 @@ button {
     flex-direction: column;
     align-items: center;
     transform: translateY(31px);
-}
-
-a button:hover {
-    transform: scale(1.25);
 }
 
 button:hover {
@@ -276,4 +271,3 @@ footer ul li {
         background-image: url(../images/delete.png);
     }
 }
-
