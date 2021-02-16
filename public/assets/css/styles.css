@@ -1,14 +1,3 @@
-/* importing google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, verdana;
-} */
-
-
 
 .header {
   background-image: url(../images/dubai.jpg);
@@ -69,15 +58,8 @@ li {
     margin-top: 20px;
 }
 
-.label {
-    font-weight: bold;
-}
-
 li h3 {
     font-size: 30px;
-    border-color:#6992b4;
-    border-style: solid;
-    border-radius: 10px;
     width:25%;
     margin:0 auto;
     text-align:center;
@@ -106,6 +88,7 @@ p {
     display: flex;
     justify-content: center;
     margin: 0, 10px, 0, 10px;
+    height: auto !important;
 }
 
 /*Add trip/Delete trip Button styling*/
@@ -133,25 +116,12 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translateY(31px);
 }
 
 a button:hover {
     transform: scale(1.25);
 }
-
-/*Delete Button Styling*/
-/* .delete {
-    padding:5px;
-    background-color: rgb(211, 162, 162);
-    margin-top: 7px;
-    margin-left: 0px;
-    -webkit-transition: 0.3s ease-in-out;
-    -webkit-transform: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -moz-transform: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    transform: 0.3s ease-in-out;
-} */
 
 button:hover {
     transform: scale(1.07);
@@ -224,8 +194,6 @@ textarea {
     transform: 0.3s ease-in-out;
 }
 
-
-
 /* Footer Styling*/
 footer {
     background: black;
@@ -240,7 +208,53 @@ footer ul li {
 }
 
 /* responsive media query start */
-@media all and (max-width: 300px){
+@media all and ( max-width: 1082px) {
+    p {
+        margin: 2px;
+    }
+
+}
+
+@media all and ( max-width: 600px) {
+    .nav-btns {
+        flex-direction: row;
+    }
+    li h3 {
+        font-size: 18px;
+        border: none;
+        width: max-content;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .image {
+        max-width: 380px;
+        max-height: 380px;
+
+    }
+    li {
+        height: 500px;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    .create-trip {
+        margin-left: 20%;
+        margin-right: 20%
+    }
+    
+}
+
+@media all and ( max-width: 320px) {
+    .header {
+        width: max-content;
+    }
+    .image {
+        width: 30%;
+        max-width: 140px;
+        max-height: 140px;
+
+    }
     html body .create-trip {
         margin-right: 40%;
     }
@@ -249,18 +263,3 @@ footer ul li {
     }
 }
 
-@media all and (min-width: 600px){
-   .create-trip {
-        margin-left: 20%;
-        margin-right: 20%
-    }
-    .nav-btns {
-        flex-direction: column;
-    }
-}
-
-@media (min-width: 480px) {
-    .nav-btns {
-        flex-direction: row;
-    }
-}
