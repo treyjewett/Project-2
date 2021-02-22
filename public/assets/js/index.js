@@ -42,7 +42,6 @@ $(document).ready(function () {
   //delete route
   $(".delete").on("click", function deleteTrip(event) {
     event.preventDefault();
-    console.log('clicked');
     var id = $(this).data("id");
     console.log(id);
     $.ajax({

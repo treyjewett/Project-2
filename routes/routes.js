@@ -10,7 +10,6 @@ module.exports = function (app) {
       raw: true,
       attributes: ['author', 'name', 'summary', 'rating']
     }).then(function (data) {
-      //console.log(data)
       var hbsObject = { trip: data }
       return res.render('index', hbsObject)
     });
@@ -34,7 +33,6 @@ module.exports = function (app) {
   //add new user
   app.post('/api/signup', function(req, res) {
     db.User.create({
-      // console.log(req.body.username, req.body.password),
       username: req.body.username,
       password: req.body.password
     }).then(function(dbUser) {
@@ -87,7 +85,6 @@ module.exports = function (app) {
 
     axios.request(options).then(function (response) {
       res.json(response.data)
-      //console.log(response.data);
     }).catch(function (error) {
       console.error(error);
     });

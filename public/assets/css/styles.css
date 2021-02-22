@@ -235,15 +235,23 @@ textarea {
 
 /* Footer Styling*/
 footer {
+    border: 3px solid black;
     background: black;
     color: white;
+    text-align: center;
+    margin-bottom: 0;
 }
 
-footer ul li {
-    display: flex;
-    margin-top: 15px;
-    margin-left: 25%;
-    padding: 5px;
+footer ul {
+    width: 75%;
+    margin-left: 11%;
+    justify-content: space-evenly;
+}
+
+#contributer {
+    text-align: center;
+    display: inline;
+    margin-bottom: 7px;
 }
 
 /* responsive media query start */
@@ -255,14 +263,6 @@ footer ul li {
 }
 
 @media all and ( max-width: 600px) {
-    .nav-btns {
-        flex-direction: row;
-    }
-    li h3 {
-        font-size: 18px;
-        border: none;
-        width: max-content;
-    }
     h4 {
         font-size: 16px;
     }
@@ -270,9 +270,6 @@ footer ul li {
         max-width: 380px;
         max-height: 380px;
 
-    }
-    li {
-        height: 500px;
     }
     p {
         margin-bottom: 0;
@@ -291,9 +288,6 @@ footer ul li {
 @media all and ( max-width: 375px) {
     .header {
         width: max-content;
-    }
-    li {
-        height: 800px;
     }
     p {
         width: max-content;
